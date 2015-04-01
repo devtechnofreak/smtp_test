@@ -1,0 +1,37 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Smtp_Tester.aspx.cs" Inherits="Smtp_Tester" %>
+
+<script runat="server">
+</script>
+<html>
+<head id="Head1" runat="server"><title>Smtp_Tester</title></head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
+            <p>
+                Enter Following Detalis:-
+            </p>
+            <p>
+                Your name:
+        <br />
+                <asp:TextBox ID="YourName" runat="server" Width="250px" />
+                <br />
+                Your email address:
+        <br />
+                <asp:TextBox ID="YourEmail" runat="server" Width="250px" />
+                <br />
+                Subject:
+                <br />
+                <asp:TextBox ID="YourSubject" runat="server" Width="400px" /><br />
+                Your Question:
+                <br />
+                <asp:TextBox ID="Comments" runat="server" Width="400px" Rows="10" TextMode="MultiLine" />
+            </p>
+            <p>
+                <asp:Button ID="btnSubmit" runat="server" Text="Send"
+                    OnClick="Button1_Click" ValidationGroup="save" />
+            </p>
+        </asp:Panel>
+        <asp:Label ID="lblmsg" runat="server"></asp:Label>
+    </form>
+</body>
+</html>
